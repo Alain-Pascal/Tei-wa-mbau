@@ -216,15 +216,16 @@ z-index: -1;
 .hero .container{
     display:block;
    text-align: center;
-    margin-top:5rem;
+    /* padding-top:5rem; */
     background-color: transparent;
+    position:absolute
 }
 .hero .container h1{
     color: #fff;
     font-size:6vw;
     display:block;
     animation: fadeUp .2s linear backwards .6s;
-    padding:2rem 0;
+    padding:1rem 0;
     
    
 }
@@ -302,9 +303,9 @@ font-size:2rem;
    
 }
 .mini-section .flex-container {
-    display:flex;
-    flex-wrap: wrap;
-    gap:2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* This creates three columns of equal width */
+    grid-gap: 10px;
     margin-top:2rem;
     align-items: center;
     justify-content: center;
@@ -467,7 +468,7 @@ font-size:2rem;
 #about-section{
     margin:50px 20px;
     animation: fadeBottom 1s ease-in;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     
     
     }
@@ -587,7 +588,7 @@ z-index: -1;
     animation: fadeBottom 1s ease-in;
 }
 .our-mission{
-     background: #f2f2f2;
+     /* background: #f2f2f2; */
      width: 100%;
      
 }
@@ -673,7 +674,7 @@ z-index: -1;
     align-items:center
 }
 .us{
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     text-align:justify;
 }
 .us h2{
@@ -807,7 +808,7 @@ nav a {
     align-items: center;
     flex-wrap: wrap;
     gap:3rem;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
 }
 .involved .image{
     flex:1 1 41rem;
@@ -919,9 +920,10 @@ padding-right:2rem;
     }
 }
 @media(max-width:768px) {
-     .flex-item-right, .flex-item-left {
-    flex: 100%;
-  }
+    .mini-section .flex-container {
+       
+        grid-template-columns: 1fr; /* Display one item per row */
+      }
  
     #menu-btn.fa-times{
         transform:rotate(180deg);
