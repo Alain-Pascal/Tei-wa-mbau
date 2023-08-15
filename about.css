@@ -30,3 +30,7 @@ section{
     background-size: cover;
     height: 500px;
 }
+.about .content h3{
+    color:#4E4FEB;
+    font-size: 2rem;
+}
