@@ -22,10 +22,13 @@ html{
     --box-shadow:0.2rem 0.2rem 0.3rem 0.3rem rgba(0,0,0,.1);
     --text-shadow:0 1.5rem 3rem rgba(226, 222, 222, 0.3);
 }
+/* body{
+    width: 100%;
+} */
 section{
     margin-top:2rem;
         padding:5rem 10%;
-        width: 95%;
+      
         
 }
 #menu-btn{
@@ -88,6 +91,7 @@ section{
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 .modal{
     display: none;
@@ -212,7 +216,7 @@ z-index: -1;
 .hero .container{
     display:block;
    text-align: center;
-    /* margin-top:2rem; */
+    margin-top:5rem;
     background-color: transparent;
 }
 .hero .container h1{
@@ -220,8 +224,8 @@ z-index: -1;
     font-size:6vw;
     display:block;
     animation: fadeUp .2s linear backwards .6s;
-    line-height: 1;
-    padding:1rem 0;
+    padding:2rem 0;
+    
    
 }
 .hero .container h1 span{
@@ -229,7 +233,7 @@ z-index: -1;
 }
 .hero .container h3{
     color: #fff;
-    font-size:2.5rem;
+    font-size:4vw;
     animation: fadeUp .2s linear backwards .6s;
     padding-top:.5rem;
     margin-bottom:1rem;
@@ -242,10 +246,10 @@ z-index: -1;
     margin-top: 1rem;
     color: #fff;
     text-decoration: none;
-    font-size:3rem;
-    padding:1.2rem 1.5rem;
+    font-size:2rem;
+    padding:1rem 1.5rem;
     cursor:pointer;
-    border-radius: 10px;
+    border-radius:5px;
     text-transform: uppercase;
 }
 .btn:hover{
@@ -297,15 +301,51 @@ font-size:2rem;
     
    
 }
-.mini-section .content{
-    margin-top:20px;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:3rem;
+.mini-section .flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top:2rem;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+   
+    
+  }
+  .mini-section .flex-container .content{
+    display:flex;
+   
+    background:#f2f2f2;
+    box-shadow: var(--box-shadow);
+    /* height:100%; */
+    padding:2rem;
+    flex-direction: column;
+    flex-basis: calc(33.33% - 10px);
+    margin:5px
+  }
+  .mini-section .flex-container .content i{
+    text-align:center;
+    font-size:2.5rem;
+    color:#4E4FEB
+  }
+  .mini-section .flex-container .content span{
+    font-size:2rem;
+    color:#999;
+    line-height:2rem;
+    padding:2rem 0;
+    text-align: center;
+    letter-spacing:.1rem;
+    /* display:block */
+    
+  }
   
-   
-   
-}
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    flex: 50%;
+  }
 .mini-section h3{
     font-size:1.5rem;
     text-align:center;
@@ -437,6 +477,7 @@ font-size:2rem;
         display: flex;
         flex-wrap: wrap;
         align-items: center; 
+        
        
        
     }
@@ -506,6 +547,7 @@ z-index: -1;
     display:block;
     background:transparent;
     text-align: center;
+    animation: fadeLeft 1s ease-in;
 }
 .sectionb .section-bg h3{
     color:#C51605;
@@ -514,7 +556,7 @@ z-index: -1;
 .sectionb .section-bg p{
     font-size: 2rem;
     color:#fff;
-    line-height: 1rem;
+    line-height:2rem;
     letter-spacing: .2rem;
     padding-top:1rem;
     display:inline-block;
@@ -541,11 +583,13 @@ z-index: -1;
    
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem
+    gap:2rem;
+    animation: fadeBottom 1s ease-in;
 }
 .our-mission{
      background: #f2f2f2;
      width: 100%;
+     
 }
 .our-mission h2{
     padding-top: 2rem;
@@ -564,6 +608,7 @@ z-index: -1;
 .our-vision{
     background:#4E4FEB;
     text-align: justify;
+    
 }
 .our-vision h2{
     color:#F1C40F;
@@ -636,13 +681,15 @@ z-index: -1;
     font-size: 3rem;
     text-align:center;
     text-transform: uppercase; 
+    animation: fadeBottom 1s ease-in;
 }
 .us .content p{
     display: block;
     letter-spacing: .1rem;
     font-size:1.8rem;
     line-height: 2rem;
-    padding:2rem  
+    padding:2rem;
+    animation: fadeBottom 1s ease-in;  
 }
 
 
@@ -700,6 +747,7 @@ nav a {
 
 .hero-content {
     z-index: 1;
+    animation:fadeBottom 1s ease-in;
 }
 .about{
     display: flex;
@@ -709,6 +757,7 @@ nav a {
 }
 .about .image{
     flex:1 1 41rem;
+    animation: fadeLeft 1s ease-in;
 }
 .about .image img{
     width:100%
@@ -725,7 +774,8 @@ nav a {
     font-size: 1.8rem;
     color:#777;
     line-height: 2;
-    padding:1rem 0
+    padding:1rem 0;
+    animation: fadeBottom 1s ease-in;
 }
 .about .content .icons-container{
     margin-top:2rem;
@@ -761,6 +811,7 @@ nav a {
 }
 .involved .image{
     flex:1 1 41rem;
+    animation: fadeBottom 1s ease-in;
 }
 .involved .image img{
     width:100%
@@ -777,7 +828,8 @@ nav a {
     font-size: 2rem;
     color:#333;
     line-height: 2;
-    padding:1rem 0
+    padding:1rem 0;
+    animation: fadeBottom 1s ease-in;
 }
 .section-bg{
     display:block
@@ -867,15 +919,10 @@ padding-right:2rem;
     }
 }
 @media(max-width:768px) {
-    
-    html{
-        font-size:50%
-     }
-     body{
-        width:fit-content;
-        font-size:50%;
-        overflow-x: hidden;
-     }
+     .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+ 
     #menu-btn.fa-times{
         transform:rotate(180deg);
     }

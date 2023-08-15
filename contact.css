@@ -77,13 +77,13 @@ form {
   .title {
     color: #fff;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size:3rem;
     line-height: 1;
     margin-bottom: 0.7rem;
   }
   label{
     margin-left: 23.5px;
-    font-size: 0.8rem ;
+    font-size:2rem ;
     padding: 0 0.4rem;
     top: 0;
     left:25px;
@@ -106,8 +106,8 @@ form {
     padding: 0.6rem 1.2rem;
     color: #fff;
     font-weight: 500;
-    font-size: 0.95rem;
-    letter-spacing: 0.5px;
+    font-size:2rem;
+    letter-spacing:.1rem;
     border-radius: 25px;
     transition: 0.3s;
   }
@@ -126,7 +126,7 @@ form {
     transform:translateY(-50%);
     padding: 0 0.4rem;
     color: #fafafa;
-    font-size: 0.9rem;
+    font-size:2rem;
     font-weight: 400;
     pointer-events:none;
     z-index:1000;
@@ -160,7 +160,7 @@ form {
     top: 0;
     left:25px;
     transform: translateY(-50%);
-    font-size: 0.8rem ;
+    font-size:1.5rem ;
     padding: 0 0.4rem;
     color: transparent;
     pointer-events: none;
@@ -189,7 +189,7 @@ form {
     top:0;
     transform:translateY(-50%);
     left: 25px;
-    font-size: 0.8rem;
+    font-size:1.5rem;
   }
   .input-container.focus span:before,
   .input-container.focus span:after{
@@ -211,7 +211,7 @@ form {
     width: 28px;
     margin-right: 0.7rem;
     color: #4E4FEB;
-    font-size: 22px;
+    font-size:2.5rem;
   }
   .contact-info{
     padding: 2.3rem 2.2rem;
@@ -223,20 +223,24 @@ form {
   }
   .text{
     color: #333;
-    margin: 1.5rem 0 2rem 0
+    margin: 1.5rem 0 2rem 0;
+    font-size:2rem
   }
+ 
   .information{
     display: flex;
     color: #555;
     margin:0.7rem 0;
     align-items: center;
-    font-size: 0.95rem ;
+    font-size:1.5rem ;
   }
   .social-media{
     padding:2rem 0 0 0 ;
   }
   .social-media p{
     color: #333;
+    font-size:2rem;
+   
   }
   .social-icons{
     display: flex;
@@ -254,6 +258,7 @@ form {
      line-height: 15px;
      margin-right: 0.5rem;
      transition: .3s;
+     font-size:1.5rem
   }
   .social-icons a:hover{
     transform: scale(1.05);
