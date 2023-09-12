@@ -33,7 +33,7 @@
 <div class="page">
 
     <!--=============================== Header ===========================-->
-    <div id="header"></div>
+    
 
     <!--=============================== Menu-Bar ========================-->
     
@@ -44,8 +44,8 @@
                         <div class="navbar-header">
                             <div class="logo">
                                 <a href="index.html" class="navbar-brand">
-                                    <img src="./images/TWM PNG.png" style="height:6rem; width:100%" alt="Homepage logo">
-                                    <span>Tei Wa Mbau</span>
+                                    <img src="./images/TWM PNG.png" style="height:120px;padding:20px; width:100%; text-align:center" alt="Homepage logo">
+                                    
                                 </a>
                             </div>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -62,9 +62,7 @@
                                     </li>
                                     <li><a href="about-us.html" class="about-us" title="About us">ABOUT US</a></li>
                                     
-                                    <li>
-                                        <a href="donate.html">DONATE</a>
-                                    </li>
+                                
                                     <li>
                                         <a href="programs.html">PROGRAMS</a>
                                     </li>
@@ -127,11 +125,67 @@
                     </ul>
                 </div>
             </div> <!--  /.row -->
+            <div id="myModal" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                       
+                        <div class="modal-body">
+                            <div class="main-contact">
+                             
+                                            <div class="leave-reply">
+                                                <div class="modal-header">
+                                                    <h3 class="modal-title">Make Your Donation</h3>
+                                                    <button class="close" onclick="closeModal()">&times;</button>
+                                                </div>
+                                                <div class="form-login">
+                                                
+                                                    <form class="login-form form-all" action="{{ url_for('donation') }}" method="POST">
+                                                       
+                                                        
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="phone" name="phone" value="Phone Number" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input class="form-control" type="number" name="amt" placeholder="Enter the amount you want to donate" required />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Pay By:
+                                                                <input list="fields" name="fields" /></label>
+                                                            <datalist id="fields">
+                                                                <option value="Mpesa">
+                                                                <option value="Paypal">
+                                                                <option value="Bank transfer">
+                                                            </datalist>
+                                                        </div>
+                                                        <button class="red-btn red-btn-form btn-login">Donate</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+               function openModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "block";
+            }
+            
+            function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+            }
+            </script>
+                               
+                       
 
             <div class="row mb-causes mb-causes-top">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/events6.jpg" alt="causes1">
                         </a>
@@ -140,7 +194,7 @@
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Education for empowerment</a></h3>
+                            <h3><a class="title-white">Education for empowerment</a></h3>
                             <p>
                                 Education is at the heart of our efforts. We understand that education is not just a privilege but a powerful
 tool for transformation. Through scholarships, mentorship programs, and community-based initiatives, we
@@ -150,7 +204,7 @@ aim to provide access to quality education for underserved individuals, opening 
                     </div>
                
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes mb-causes-top -->
@@ -158,7 +212,7 @@ aim to provide access to quality education for underserved individuals, opening 
             <div class="row mb-causes">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a  class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/four-vol.jpg" alt="causes2">
                         </a>
@@ -167,7 +221,7 @@ aim to provide access to quality education for underserved individuals, opening 
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Community development</a></h3>
+                            <h3><a class="title-white">Community development</a></h3>
                             <p>
                                 Strong communities are the backbone of a prosperous society. We work closely with local communities to
 identify their unique needs and develop sustainable solutions. From infrastructure projects to skills
@@ -177,7 +231,7 @@ training programs, our community development initiatives are designed to foster 
                     </div>
                    
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes -->
@@ -185,7 +239,7 @@ training programs, our community development initiatives are designed to foster 
             <div class="row mb-causes">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/volunteer_5.jpg" alt="causes3">
                         </a>
@@ -194,7 +248,7 @@ training programs, our community development initiatives are designed to foster 
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Environmental Sustainability</a></h3>
+                            <h3><a class="title-white">Environmental Sustainability</a></h3>
                             <p>
                                 We are committed to safeguarding the environment for future generations. Through environmental
 awareness campaigns, tree planting initiatives, and waste management programs, we strive to create a
@@ -204,7 +258,7 @@ greener and more sustainable world for all.
                     </div>
                     
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes -->
@@ -212,7 +266,7 @@ greener and more sustainable world for all.
             <div class="row mb-causes">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/girl-community.jpg" alt="causes4">
                         </a>
@@ -221,7 +275,7 @@ greener and more sustainable world for all.
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Empowerment through enterpreneurship</a></h3>
+                            <h3><a class="title-white">Empowerment through enterpreneurship</a></h3>
                             <p>
                                 Entrepreneurship empowers individuals to create opportunities and drive economic growth. Our
 entrepreneurship programs offer training, mentorship, and financial support to aspiring entrepreneurs,
@@ -231,7 +285,7 @@ equipping them with the skills and resources needed to succeed in their ventures
                     </div>
                     
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes -->
@@ -239,7 +293,7 @@ equipping them with the skills and resources needed to succeed in their ventures
             <div class="row mb-causes">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/gallery9.jpg" alt="causes5">
                         </a>
@@ -248,7 +302,7 @@ equipping them with the skills and resources needed to succeed in their ventures
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Economic opportunities for boychild</a></h3>
+                            <h3><a  class="title-white">Economic opportunities for boychild</a></h3>
                             <p>
                                 Entrepreneurship empowers individuals to create opportunities and drive economic growth. Our
 entrepreneurship programs offer training, mentorship, and financial support to aspiring entrepreneurs,
@@ -258,7 +312,7 @@ equipping them with the skills and resources needed to succeed in their ventures
                     </div>
                     
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes -->
@@ -266,7 +320,7 @@ equipping them with the skills and resources needed to succeed in their ventures
             <div class="row mb-causes mb-causes-bottom">
                 <div class="col-md-6 col-sm-12 col-xs-12 center-causes">
                     <div class="person-img">
-                        <a href="donate.html" class="img-link">
+                        <a class="img-link">
                             <span><i class="icon-eye" aria-hidden="true"></i></span>
                             <img src="./images/3.jpg" alt="causes6">
                         </a>
@@ -275,7 +329,7 @@ equipping them with the skills and resources needed to succeed in their ventures
                 <div class="col-md-6 col-sm-12 col-xs-12 ">
                     <div class="person-card ">
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Access to clean water </a></h3>
+                            <h3><a  class="title-white">Access to clean water </a></h3>
                             <p>
                                 The Tei Wa Mbau Foundation is dedicated to providing access to clean
 drinking water to communities in need. Through sustainable water projects, they aim to improve health,
@@ -285,7 +339,7 @@ hygiene, and overall well-being in the region
                     </div>
                    
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
             </div> <!--  /.row mb-causes mb-causes-bottom -->
@@ -305,28 +359,31 @@ hygiene, and overall well-being in the region
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
                                 <div class="footer-about-info">
                                     <h4> About Us </h4>
-                                    <p> 
+                                    <p>
                                         Together, we work tirelessly to create pathways for growth and
                                         empowerment, driven by a deep belief in the potential for change.
                                     </p>
                                     <ul>
-                                        <li><i class="icon-location-1"></i>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
                                             <span>Tei Wa Mbau Foundation</span></li>
-                                        <li><i class="icon-phone"></i>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i>
                                             <span>Phone: +254 123 000 000</span></li>
-                                        <li><i class="icon-mail"></i>
+                                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
                                             <span>Email: <a href="mailto:info@teiwambau.com">info@teiwambau.com</a></span></li>
                                     </ul>
                                 </div>
                                 <div class="social-link footer-social-link">
                                     <ul>
-                                        <li><a href="https://www.tumblr.com/" class="circle c-1"><i
-                                                class="icon-tumblr "></i></a></li>
-                                        <li><a href="https://www.facebook.com/" class="circle c-2"><i
-                                                class="icon-facebook "></i></a></li>
-                                        <li><a href="https://www.pinterest.com/" class="circle c-3"><i
-                                                class="icon-pinterest "></i></a></li>
-                                        <li><a href="https://vimeo.com/" class="circle c-4"><i class="icon-vimeo "></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="circle c-1">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a></li>
+                                        <li><a href="https://www.linkedin.com/" class="circle c-2">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a></li>
+                                        <li><a href="https://www.instagram.com/" class="circle c-3">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                </a></li>
+                                       
                                     </ul>
                                 </div> <!-- footer-social-link -->
                             </div>
@@ -351,24 +408,33 @@ hygiene, and overall well-being in the region
                                     </div>
                                 </form>
                             </div>
+
+                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                                <h4> Subscribe to our Newsletter </h4>
+                                <form action="...">
+                                    <div class="form-group">
+                                        <input id="email" name="email" type="email" placeholder="Your-Email address"
+                                               class="form-control" required="">
+                                    </div>
+                                    
+                                    <div class="form-group buttons ">
+                                        <input type="submit" class="red-btn red-btn-form" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
         
                         </div>
                     </div>
                 </div>
         
-                <div class="back-to-top">
-                    <a class="top top-page" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
-        
-                <div class="back-to-top-mob">
-                    <a class="top top-mob" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
+                
             </div>
         
         </footer>
     </div>
 
-</div> <!--  /.page -->
+</div>  <!--  /.page -->
+
 
 <!-- JS code -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

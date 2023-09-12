@@ -1,89 +1,4 @@
-/*------------------------------------------------------------------
-This is main CSS file that contains custom style rules used in this template
--------------------------------------------------------------------*/
 
-/*------------------------------------------------------------------
-Project:	THX - Charity HTML Template
-Version:	1.0
-Author: Fruitful Code
-Last change:	10.10.2017
-Copyright: (C) 2016
-
-[Table of contents]
-
-1. Fonts
-    1.1 Fontello
-    1.2 Cutie Patootie
-2. Reset for older browsers
-3. Global CSS
-4. Header
-5. Menu-Bar
-6. Footer
-7. Homepage-Ecology
-    7.1 Slider
-    7.2 Contact With Us
-    7.3 Images
-    7.4 Charity Events
-    7.5 Number
-    7.6 Our Causes
-    7.7 Be a Volunteer
-    7.8 Charity Volunteer
-    7.9 Save a Life
-    7.10 Latest News
-    7.11 Photo
-8. News
-    8.1 Photo Post
-    8.2 Banner
-    8.3 Video
-    8.4 Gallery
-    8.5 Youtube
-    8.6 Post Without Image
-    8.7 Audio
-    8.8 Quota
-    8.9 Link Post
-    8.10 Pagination
-9. Sidebar
-    9.1 Categories
-    9.2 Search
-    9.3 Calendar
-    9.4 Recent Posts
-    9.5 Tags
-    9.6 Instagram
-10. News 2 and 3 columns
-11. Blog Single
-    11.1 About author
-    11.2 Comments
-    11.3 Leave a Reply
-    11.4 You May Also Like
-    11.5 Sidebar
-12. About us
-    12.1 Become a Volunteer
-13. Shop
-14. Our Causes
-15. Our Causes 2 columns
-16. Feature
-17. Gallery
-18. Contact
-19. 404 Page
-20. Login | Register
-21. Single Causes
-22. Shop Product
-
-[Color codes]
-
-# Black (text): #060606
-# Red (headings, links): #f20000
-
-[Typography]
-
-# Body: 'Poppins', sans-serif; 12px;
-# logo: Cutie Patootie, sans-serif;
-
--------------------------------------------------------------------*/
-
-/* """"""""""""""""""""""""""""""""""""   1. Fonts   """"""""""""""""""""""""""""""""""  */
-
-/* ==============  1.1. Fontello  ============== */
 
 @font-face {
     font-family: 'fontello';
@@ -267,9 +182,9 @@ img {
 }
 
 .title-text {
-    font-size: 45px;
+    font-size: 35px;
     line-height: 1.35;
-    margin-bottom: 0;
+    margin-bottom:20px;
 }
 
 .black {
@@ -301,15 +216,15 @@ img {
     font-size: 18px;
     line-height: 1.6;
     display: inline-block;
-    width: 64%;
-    word-spacing: -3px;
+    width:100%;
+    word-spacing: 2px;
     letter-spacing: 0.1px;
     margin-bottom: 60px;
 }
 
 .wave-line {
     height: 17px;
-    margin: 17px auto 28px;
+    margin: 10px auto 20px;
     background-image: url(./images/wave-lines.png);
     background-repeat: no-repeat;
     content: "";
@@ -329,6 +244,7 @@ input {
     text-align: center;
     font-weight: 600;
     font-size: 16px;
+    border-radius:30px
 }
 
 .red-btn:hover {
@@ -359,6 +275,100 @@ input {
     padding-top: 22px;
     margin-top: 0;
 }
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+  }
+  
+  .image-block {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+ 
+  }
+  
+  .image-block-inner {
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
+    -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
+    box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 1);
+  
+  }
+  
+  .image-block li>.image-block-inner {
+    padding-bottom: 30px;
+    background-color: #fff;
+    
+  }
+  
+  .image-block-inner a{
+    color: #111;
+    text-decoration: none;
+    
+  }
+  
+  .image-block-inner
+  h4 a {
+    font-size:14px;
+    margin-left: 20px;
+    display:block;
+    color: #666666;
+  }
+  
+  .image-block-inner a:hover {
+    text-decoration: none;
+  }
+  
+  .image-block li>.image-block-inner>a {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .image-block li>.image-block-inner>a img {
+    border: 1px solid #e1e1df;
+    height:auto;
+    width:100%;
+    object-fit: contain;
+  }
+  
+  .image-block li>.image-block-inner:hover {
+    background-color: #eee;
+  }
+  
+  .hp-posts-cat {
+    margin-bottom: 13px;
+    margin-top: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    color: #666666;
+  }
+  
+  /* .news {
+    font-family: 'Oswald', sans-serif;
+  } */
+  
+  .news .image-block li>.image-block-inner h4,
+  .hp-posts-cat,
+  .news .image-block li>.image-block-inner p,
+  .read-more {
+    padding: 0 28px;
+  }
+  
+  .read-more {
+    display: block;
+    text-decoration: underline;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  /* Media Queries */
+  
+ 
 iframe{
     width: 100%;
     height: 100%;
@@ -391,9 +401,9 @@ iframe{
 /* ===========================  5. Menu-Bar  ====================== */
 .menuBar {
     position: absolute;
-    top: 52px;
     z-index: 9999;
     width: 100%;
+    background: linear-gradient(to left, #1565c0, #f0f8ff);
 }
 
 .p0 {
@@ -403,6 +413,8 @@ iframe{
 
 .logo {
     position: relative;
+    top:-20px
+    
        
 }
 
@@ -443,9 +455,10 @@ iframe{
     font-family: Cutie Patootie;
     font-size:2rem;
     position: absolute;
-    top: 52px;
-    left: 55px;
+    top: 70px;
+    left:110px;
     text-align: center;
+    width:max-content
 }
 
 .navbar-default .navbar-nav li {
@@ -670,7 +683,7 @@ iframe{
 }
 
 .circle.c-3 {
-    background-color: #ed1b23;
+    background: linear-gradient(to right, #8a3ab9, #c13584, #f56040, #f77737);
 }
 
 .circle.c-4 {
@@ -804,72 +817,54 @@ footer:-ms-input-placeholder {
 .slider .item {
     background-size: 116%;
 }
-
-#home-carousel.carousel{
-    opacity: 1;
+.slider-info{
+    text-align:center;
+   
+    
+    
+}
+.gb-middle{
+   
 }
 
-#home-carousel.carousel .item{
-    display: block;
-    position: absolute;
-    left: -10px;
-    top: 0;
+
+
+
+
+.slider {
     width: 100%;
-    opacity: 0;
-    transition: opacity 1s linear, visibility 0s linear 5s, left 1s linear;
-    visibility: hidden;
-}
-
-#home-carousel.carousel .item .slider-info,
-#home-carousel.carousel .item .buttons{
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0s linear 0s, visibility 0.1s linear 0s;
-
-}
-
-#home-carousel.carousel .item.active .slider-info,
-#home-carousel.carousel .item.active .buttons{
-    opacity: 1;
+    height:100%; /* Adjust the height as needed */
+    overflow: hidden;
+    /* position: relative; */
     visibility: visible;
-    transition-delay: 0s;
+    max-height: none;
 }
 
-#home-carousel.carousel .item.active{
-    position: relative;
-    left:0;
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0s;
-}
-
-.slide_1 {
-    background-image: url("http://via.placeholder.com/1920x1280");
+.slider-item {
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
-    background-position: 2% 39%;
-}
-
-.slide_2 {
-    background-image: url("http://via.placeholder.com/1920x1280");
-    background-repeat: no-repeat;
-    background-position: 2% 45%;
-}
-
-.slide_3 {
-    background-image: url("http://via.placeholder.com/1920x1280");
-    background-repeat: no-repeat;
-    background-position: 2% 73%;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: opacity 0.5s;
+    position: absolute;
+   
 }
 
 .item-content {
-    display: table;
+    text-align: center;
+    /* display:block; */
+    /* display: table; */
     width: 100%;
+   
+   
+   
 }
 
 .gb-middle {
     height: 806px;
-    display: table-cell;
-    vertical-align: middle;
+ display: table-cell;
+     vertical-align: middle;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -878,9 +873,10 @@ footer:-ms-input-placeholder {
 
 .slider-info {
     margin-top: 19px;
-    font-size: 60px;
-    max-width: 774px;
+    font-size: 50px;
+    /* max-width: 774px; */
     color: #fff;
+   
 }
 
 .slider-info:after {
@@ -913,10 +909,14 @@ footer:-ms-input-placeholder {
 }
 
 .slider-info h2 {
-    font-size: 110px;
-    line-height: 1.0;
+    font-size: 47px;
+    line-height: 1.2;
+    text-align: center;
     margin-left: -7px;
     position: relative;
+    display:block;
+    background-color: rgba(0, 0, 0, 0.2); 
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
     z-index: 2;
     -webkit-animation-delay: 0.5s;
     -moz-animation-delay: 0.5s;
@@ -939,7 +939,7 @@ footer:-ms-input-placeholder {
 }
 
 .red-btn-0 {
-    padding: 29px 49px;
+    padding: 15px 39px;
     margin-top: 5px;
 }
 
@@ -967,6 +967,8 @@ footer:-ms-input-placeholder {
 /* ============  7.2. Contact With Us  ============= */
 .main-container-1 {
     padding: 136px 0 121px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .paragraph{
@@ -982,7 +984,7 @@ footer:-ms-input-placeholder {
 }
 
 .red-btn-1 {
-    padding: 25px 49px;
+    padding: 15px 39px;
     margin-top: 22px;
 }
 
@@ -1032,7 +1034,7 @@ footer:-ms-input-placeholder {
     line-height: 1.6;
     display: inline-block;
     width: 64%;
-    word-spacing: -3px;
+    word-spacing: 1px;
     letter-spacing: 0.1px;
     margin-bottom: 62px;
 }
@@ -1133,6 +1135,7 @@ a.white:active {
 .main-container-4 .person-content h3 {
     margin-top: 37px;
     letter-spacing: -1px;
+   display:inline-flex;
 }
 
 .main-container-4 .person-content p {
@@ -1144,7 +1147,7 @@ a.white:active {
 }
 
 .main-container-4 .person-img {
-    height: 300px;
+    height: 200px;
     text-align: center;
 }
 
@@ -1249,8 +1252,8 @@ a.white:active {
 }
 
 .red-btn-4 {
-    padding: 15px 29px;
-    margin-top: 29px;
+    padding: 15px 39px;
+    margin-top: 10px;
 }
 
 /* ==============  7.7. Be a Volunteer  ================ */
@@ -1292,7 +1295,7 @@ a.white:active {
 }
 
 .red-btn-5 {
-    padding: 30px 49px;
+    padding: 15px 29px;
     margin-top: 22px;
 }
 
@@ -1309,6 +1312,7 @@ a.white:active {
     margin-top: 27px;
     letter-spacing: -1px;
     margin-bottom: 10px;
+    
 }
 
 .main-container-6 .person-content p {
@@ -1568,9 +1572,10 @@ a.white:active {
         background-position: 50%;
         background-size: cover;
     }
+    
 
     .gb-middle {
-        height: 700px;
+        height: auto;
     }
 
     .slider-info {
@@ -1666,8 +1671,8 @@ a.white:active {
     }
 
     .slider-info h2 {
-        font-size: 63px;
-        margin-left: 0;
+        font-size: 20px;
+        margin-left:0;
     }
 
     /* ========  Be a Volunteer  ======== */
@@ -1746,6 +1751,9 @@ a.white:active {
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
+    .slider .item img{
+        height: auto;
+    }
 
     .navbar-right {
         padding-top: 0;
@@ -1821,7 +1829,7 @@ a.white:active {
 
     /* ========  Menu-Bar  ======== */
     .menuBar{
-        top: 45px;
+        /* top: 45px; */
     }
 
     ul.nav.navbar-nav {
@@ -1933,7 +1941,7 @@ a.white:active {
 
     /* ==========  Slider  ========= */
     .slider-info h2 {
-        font-size: 45px;
+        font-size:20px;
     }
 
     /* ========== Contact With Us ======== */
@@ -1998,6 +2006,9 @@ a.white:active {
 
     .news-h{
         margin-top: 5px;
+    }
+    iframe{
+        height:auto;
     }
 }
 
@@ -2145,7 +2156,7 @@ a.white:active {
 }
 
 .banner h1{
-    font-size: 72px;
+    font-size: 45px;
     font-weight: 400;
     position: absolute;
     bottom: 181px;
@@ -2180,7 +2191,8 @@ a.white:active {
 }
 
 .video-overlay{
-    background-image: url("http://via.placeholder.com/748x440") ;
+
+    height:auto;
     background-size: cover;
     position:absolute;
     left:0;
@@ -2279,8 +2291,7 @@ a.white:active {
 }
 
 .youtube-overlay{
-    background-image: url("http://via.placeholder.com/748x440");
-    background-size: cover;
+    margin:20px;
     position:absolute;
     left:0;
     top:0;
@@ -2687,6 +2698,7 @@ table{
 }
 
 @media screen and (max-width: 979px) {
+   
     .gallery_2,
     .gallery_3{
         background-position: 44% 0;
@@ -2739,6 +2751,7 @@ table{
     .sidebar .photo-link {
         width: 15%;
     }
+    
 }
 
 @media screen and (max-width: 530px){
@@ -3365,6 +3378,34 @@ p.about-author-paragraph:hover a{
     left: 50%;
     padding-right: 0;
     padding-left: 15px;
+}
+
+
+       
+        .img-thumbnail {
+            max-width: 100%;
+            height: auto;
+        }
+         .imagebox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap:50px;
+    
+   
+}
+.imagebox .image{
+    flex:1 1 41rem
+    
+}
+.image-description{
+   
+    flex:1 1 46rem;
+    
+   
+   
+    
+    
 }
 
 .who-we-are .title-text{
@@ -4195,7 +4236,7 @@ p.about-author-paragraph:hover a{
 
 /* """"""""""   18. Contact  """""""""""""""" */
 .main-contact{
-    padding: 130px 0 135px;
+    padding: 30px 0 35px;
 }
 
 .contact strong{

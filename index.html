@@ -47,8 +47,8 @@
                     <div class="navbar-header">
                         <div class="logo">
                             <a href="index.html" class="navbar-brand">
-                                <img src="./images/TWM PNG.png" style="height:6rem; width:100%" alt="Homepage logo" loading="lazy">
-                                <span>Tei Wa Mbau</span>
+                                <img src="./images/TWM PNG.png" style="height:120px; padding:20px; width:100%; text-align:center" alt="Homepage logo">
+                                
                             </a>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -65,9 +65,7 @@
                                        
                                 <li><a href="about-us.html" class="about-us" title="About us">ABOUT US</a></li>
                                 
-                                <li>
-                                    <a href="donate.html">DONATE</a>
-                                </li>
+                        
                                 <li>
                                     <a href="programs.html">PROGRAMS</a>
                                 </li>
@@ -102,113 +100,61 @@
     </div>
 
     <!--=============================== Slider ==========================-->
-    <div style="background-image: url('./images/b.jpg');background-repeat: no-repeat;background-attachment: fixed;
-  background-size: cover;">
+   
         
                 
+    <div class="slider">
+        <div class="slider-item" style="background-image: url('./images/b.jpg');"></div>
+        <div class="slider-item" style="background-image: url('./images/sen.jpg');"></div>
+        <div class="slider-item" style="background-image: url('./images/1.jpg');"></div>
+   
 
-                <div>
-                    <div class="container p0">
-                        <div class="item-content">
-                            <div class="gb-middle">
-                                <div class="slider-info">
-                                    <h4>Join Us</h4>
-                                    <h2>Empowering Communities, Transforming lives</h2>
-                                    <div class="buttons">
-                                        <a href="programs.html" class="red-btn red-btn-0">Get Involved</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- /.item-content -->
-                    </div>
-                </div><!-- /.item -->
-
-                
-        
-    </div><!-- /.slider -->
-
-    <!--=============================== Contact With Us =================-->
-    <div class="main-container-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div>
-                        <p><img src="./images/causes3.jpg" alt="woman-girl"></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="container-text">
-                        <h2 class="title-text">About our Foundation</h2>
-
-                        <div class="wave-line"></div>
-                        <strong>Lend your strength and love to the less fortunate
-                        </strong>
-
-                        <p class="paragraph">
-                            Tei Wa Mbau Foundation is a non-profit organization rooted in the values of compassion, integrity, and
-                            collaboration. Our team is composed of passionate individuals who share a common goal: to uplift lives
-                            and make a positive impact. Together, we work tirelessly to create pathways for growth and
-                            empowerment, driven by a deep belief in the potential for change.
-                        </p>
-
+    <div>
+        <div class="container p0">
+            <div class="item-content">
+                <div class="gb-middle">
+                    <div class="slider-info">
+                        <h2>Empowering Communities for a brighter tomorrow</h2>
                         <div class="buttons">
-                            <a href="programs.html" class=" red-btn red-btn-1">Get involved</a>
+                            <a href="programs.html" class="red-btn red-btn-0">Get Involved</a>
                         </div>
                     </div>
+                </div>
+            </div><!-- /.item-content -->
+        </div>
+    </div><!-- /.item -->
+    </div>
+
+
+    <script>
+        
+        const sliderItems = document.querySelectorAll(".slider-item");
+        let currentIndex = 0;
+
+        function changeSlide() {
+            sliderItems[currentIndex].style.opacity = "0";
+            currentIndex = (currentIndex + 1) % sliderItems.length;
+            sliderItems[currentIndex].style.opacity = "1";
+            setTimeout(changeSlide, 3000); 
+        }
+
+        // Start the slider
+        setTimeout(changeSlide, 0);
+    </script>
+
+             
+   
+    <!-- /.slider -->
+
+   
 
                 </div>
             </div>
         </div>
-    </div>
+    </div>  
 
-    <!--=============================== Images ==========================-->
-    <div class="main-container-2 grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center mb">
-                    <div class="images">
-                        <p><img src="./images/do.jpg" alt="drop"></p>
-                    </div>
-                    <div class="images-text">
-                        <h2><a href="donate.html">Donate</a></h2>
-                        <p class="paragraph">
-                            We believe that every action, no matter how small, has the potential to create a ripple effect of positivity.
-Together, we can build a brighter tomorrow for all. Your contribution will help us create positive change and empower communities in need.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center mb">
-                    <div class="images">
-                        <p><img src="./images/hands.jpg" alt="circle"></p>
-                    </div>
-                    <div class="images-text">
-                        <h2><a href="programs.html">Get Involved</a></h2>
-                        <p class="paragraph">
-                            As a non-profit organization, the Tei Wa Mbau Foundation relies on the support and contributions of
-generous individuals and partners to sustain and expand its initiatives. The foundation's commitment to
-giving back to the community and making a lasting difference in people's lives makes it a significant
-force for positive change in the Makueni County and beyond.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-                    <div class="images">
-                        <p><img src="./images/handshake.png" alt="heart"></p>
-                    </div>
-                    <div class="images-text">
-                        <h2><a href="donate.html">Join Us</a></h2>
-                        <p class="paragraph">
-                            Join us in our journey to make a lasting impact. Whether you choose to volunteer, donate, or collaborate,
-
-We believe that every action, no matter how small, has the potential to create a ripple effect of positivity.
-Together, we can build a brighter tomorrow for all.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+   
+    
 
     <!--=============================== Charity Events ==================-->
     <div class="events black" style="background-image: url('./images/bg.jpg');background-repeat: no-repeat;background-attachment: fixed;
@@ -218,8 +164,8 @@ Together, we can build a brighter tomorrow for all.
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <h2 class="title-text">What We Do</h2>
-                        <div class="wave-line wave-center"></div>
-                        <p class="paragraph-black">Support us by contributing to our different initiatives </p>
+                        
+                       
                     </div>
                 </div>
 
@@ -369,72 +315,28 @@ Together, we can build a brighter tomorrow for all.
         </div>
     </div>
 
-    <!--=============================== Number ======================-->
-    <div class="number" id="counts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
-                    <div class="text">
-                        <p>
-                            <span class="spincrement">500</span>
-                            <span class="text-1"> Successful Projects </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
-                    <div class="text">
-                        <p>
-                            <span class="spincrement">1534</span>
-                            <span class="text-1"> People Impacted </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
-                    <div class="text">
-                        <p>$
-                            <span class="spincrement ml">14432</span>
-                            <span class="text-1"> Money Donated </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 center ">
-                    <div class="text">
-                        <p><span class="spincrement">189</span>
-                            <span class="text-1"> Total Volunteers </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+     <!--=============================== Images ==========================-->
+   
+
+   
 
     <!--=============================== Our Causes ======================-->
     <div class="main-container-4">
         <div class="container">
 
-            <!-- <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="text-center">
-                        <h2 class="title-text">Our Causes</h2>
-                        <div class="wave-line wave-center"></div>
-                        <p class="paragraph-white">Fundraising event ideas have become a staple in many organizations
-                            as a way to help with fundraising event planning, entertaining and engaging your donors </p>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="row">
 
-                <div class="col-lg-4 col-md-4 col-sm-6 mb">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb">
                     <div class="person-card ">
                         <div class="person-img">
-                            <a href="programs.html" class="img-link">
+                            <a href="image1.html" class="img-link">
                                 <span><i class="icon-eye" aria-hidden="true"></i></span>
-                                <img src="./images/3.jpg" alt="" class="img">
+                                <img src="./images/water.jpg" alt="" class="img">
                             </a>
                         </div>
                         <div class="person-content">
-                            <h3><a href="donate.html" class="title-white">Provide clean water</a></h3>
+                            <h3><a class="title-white">Provide clean water</a></h3>
                             <p>Provide access to clean water</p>
                         </div>
                     </div>
@@ -449,20 +351,80 @@ Together, we can build a brighter tomorrow for all.
                         <h6 class="pull-right">112000.00 USD</h6>
                     </div>
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
+                    
+
+                    
+                    <div id="myModal" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                    <div class="main-contact">
+                                     
+                                                    <div class="leave-reply">
+                                                        <div class="modal-header">
+                                                            <h3 class="modal-title">Make Your Donation</h3>
+                                                            <button class="close" onclick="closeModal()">&times;</button>
+                                                        </div>
+                                                        <div class="form-login">
+                                                        
+                                                            <form class="login-form form-all" action="{{ url_for('donation') }}" method="POST">
+                                                               
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="Phone" name="Phone" value="Phone Number" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input class="form-control" type="number" name="amt" placeholder="Enter amount you want to donate" required />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>Pay By:
+                                                                        <input list="fields" name="fields" /></label>
+                                                                    <datalist id="fields">
+                                                                        <option value="Mpesa">
+                                                                        <option value="Paypal">
+                                                                        <option value="Bank transfer">
+                                                                    </datalist>
+                                                                </div>
+                                                                <button class="red-btn red-btn-form btn-login">Donate</button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                       function openModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    }
+
+    function closeModal() {
+        const modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+                    </script>
+                                       
+                               
+                          
+                   
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 mb">
+                <div class="col-lg-3 col-md-3 col-sm-6 mb">
                     <div class="person-card ">
                         <div class="person-img">
-                            <a href="programs.html" class="img-link">
+                            <a href="image2.html" class="img-link">
                                 <span><i class="icon-eye" aria-hidden="true"></i></span>
                                 <img src="./images/1.jpg" alt="" class="img">
                             </a>
                         </div>
                         <div class="person-content">
-                            <h3><a href="programs.html" class="title-white">Education to Every Child</a></h3>
+                            <h3><a href="image2.html" class="title-white">Education to Every Child</a></h3>
                             <p>Education for young children </p>
                         </div>
                     </div>
@@ -477,20 +439,20 @@ Together, we can build a brighter tomorrow for all.
                         <h6 class="pull-right">112000.00 USD</h6>
                     </div>
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="person-card ">
                         <div class="person-img">
-                            <a href="programs.html" class="img-link">
+                            <a href="image3.html" class="img-link">
                                 <span><i class="icon-eye" aria-hidden="true"></i></span>
                                 <img src="./images/four-vol.jpg" alt="" class="img">
                             </a>
                         </div>
                         <div class="person-content">
-                            <h3><a href="programs.html" class="title-white"> Community Development
+                            <h3><a href="image3.html" class="title-white"> Community Development
                             </a></h3>
                             <p>Support community development initiatives</p>
                         </div>
@@ -507,100 +469,150 @@ Together, we can build a brighter tomorrow for all.
                         <h6 class="pull-right">112000.00 USD</h6>
                     </div>
                     <div class="buttons">
-                        <a href="donate.html" class=" red-btn red-btn-4">Donate</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!--=============================== Be a Volunteer ==================-->
-    <div class="container-fluid black main-container-5">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="content-1 pull-right">
-                    <h2 class="title-text">Be a Volunteer for Our Community</h2>
-                    <div class="wave-line"></div>
-                    <p>
-                        As a non-profit organization, the Tei Wa Mbau Foundation relies on the support and contributions of
-generous individuals and partners to sustain and expand its initiatives. The foundation's commitment to
-giving back to the community and making a lasting difference in people's lives makes it a significant
-force for positive change in the Makueni County and beyond
-<p>
-    Join us in our journey to make a lasting impact. Whether you choose to volunteer, donate, or collaborate,
-your contribution will help us create positive change and empower communities in need.
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="person-card ">
+                        <div class="person-img">
+                            <a href="image4.html" class="img-link">
+                                <span><i class="icon-eye" aria-hidden="true"></i></span>
+                                <img src="./images/entrepreneurship.jpg" alt="" class="img">
+                            </a>
+                        </div>
+                        <div class="person-content">
+                            <h3><a href="image4.html" class="title-white">Empowerment through enterpreneurship
+                            </a></h3>
+                            <p>Support aspiring entrepreneurs</p>
+                        </div>
+                    </div>
+                    <div class="scale-area">
+                        <h6>Raised</h6>
+                        <h6 class="pull-right">Goal</h6>
 
-</p>
-<p>
-    We believe that every action, no matter how small, has the potential to create a ripple effect of positivity.
-Together, we can build a brighter tomorrow for all.
-
-</p>
-                    </p>
-                    <p>
-                        Join us and make a difference
-                    </p>
+                        <div class="scale clearfix">
+                            <div class="scale-bar-1 stop" data-percent="62"></div>
+                            <div class="scale-bar-percent">62%</div>
+                        </div>
+                        <h6>5730.00 USD</h6>
+                        <h6 class="pull-right">112000.00 USD</h6>
+                    </div>
                     <div class="buttons">
-                        <a href="donate.html" class="red-btn red-btn-5">Get Involved</a>
+                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
                     </div>
                 </div>
+                
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 pos-ab">
-                <div>
-                	<img src="./images/gallery4.jpg" style="height: 625px;width: 700px">
-                    <div class="shadow-r"></div>
+        </div>
+    </div>
+     <!--=============================== Number ======================-->
+    <div class="number" id="counts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
+                    <div class="text">
+                        <p>
+                            <span class="spincrement">5</span>
+                            <span class="text-1"> Successful Projects </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
+                    <div class="text">
+                        <p>
+                            <span class="spincrement">1534</span>
+                            <span class="text-1"> People Impacted </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
+                    <div class="text">
+                        <p>$
+                            <span class="spincrement ml">1442</span>
+                            <span class="text-1"> Money Donated </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 center ">
+                    <div class="text">
+                        <p><span class="spincrement">50</span>
+                            <span class="text-1"> Total Volunteers </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- =============================== Charity Volunteer ===============
-    <div class="main-container-6 ">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="text-center">
-                        <h2 class="title-text">Charity Volunteers</h2>
-                        <div class="wave-line wave-center"></div>
-                        <p class="paragraph-white">Popular Celebrities who are a part of us </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="owl-carousel ">
-                <div class="person-card item">
-                    <img src="./images/volunteer_1.jpg" alt="" class="img">
-                    <div class="person-content">
-                        <h3>Annette Ramsey</h3>
-                        <span>Psychologist</span>
-                    </div>
-                </div><!--/person card-->
-
-                <!-- <div class="person-card item">
-                    <img src="./images/volunteer_2.jpg" alt="" class="img">
-                    <div class="person-content">
-                        <h3>Todd Boyd</h3>
-                        <span>Teacher</span>
-                    </div>
-                </div><!--/person card-->
-
-
-    <!--=============================== Save a Life =====================-->
-    <!-- <div class="black " id="save-life">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-6 col-sm-3 col-xs-12 cont-img">
-                    <img src="./images/man-in-black.jpg" style="height: 100%;">
-                </div>
-                <div class="col-md-6 col-sm-9 col-xs-12 save-life">
-                    <h2> Save a Life Please Donate </h2>
-                </div>
-            </div>
+   
+    <div class="main-container-4">
+        <div class="container mt-md-5">
+          <h2 class="title-text">Recent News</h2>
+          <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+            <li class="col-lg-4 col-md-5 image-block full-width p-3">
+              <div class="image-block-inner">
+                <a class="mh-100" href="#">
+                  <img src="./images/causes9.jpg" alt=""class="img-responsive w-100"></a>
+                <span class="hp-posts-cat">5 September 2023</span>
+                <h4 class="mt-3"><a class="title-white" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h4>
+                <!--  <p></p> -->
+                <a href="#" class="read-more title-white">Read more ></a>
+              </div><!-- .image-block-inner -->
+            </li>
+            <li class="col-lg-4 col-md-5 image-block full-width p-3">
+              <div class="image-block-inner">
+                <a class="mh-100" href="#">
+                  <img src="./images/b.jpg" alt="" class="img-responsive w-100"></a>
+                <span class="hp-posts-cat">28 August 2023</span>
+                <h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h4>
+                <!--  <p></p> -->
+                <a href="#" class="read-more title-white">Read more ></a>
+              </div><!-- .image-block-inner -->
+            </li>
+            <li class="col-lg-4 col-md-5 image-block full-width p-3">
+              <div class="image-block-inner">
+                <a class="mh-100" href="#">
+                  <img src="./images/home.jpg" alt="" class="img-responsive w-100"></a>
+                <span class="hp-posts-cat">9 August 2023</span>
+                <h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h4>
+                <!--  <p></p> -->
+                <a href="#" class="read-more title-white">Read more ></a>
+              </div><!-- .image-block-inner -->
+            </li>
+          </ul>
         </div>
-    </div> -->
+      
+   </div>
+    
 
-    <!--=============================== Latest News =====================-->
+    <div class="main-container-4">
+    
+            <div class="text-center">
+                <h2 class="">Our Testimonial</h2>
+            </div>
+        
+            <div class="youtube">
+                
+                     <div class="youtube-overlay-image">
+           
+                        <div class="youtube-overlay">
+
+                        <iframe class="iframe" src="https://www.youtube.com/embed/gjvQ83MrVfk" title="Impactful Endeavors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen web-share"></iframe>
+                      
+                        </div>
+          
+        
+                    </div>
+                </div>
+                
+                   
+        
+    </div>
+    
+
+
+    <!-- =============================== Latest News =====================--> 
     
 
 
@@ -620,23 +632,26 @@ Together, we can build a brighter tomorrow for all.
                                         empowerment, driven by a deep belief in the potential for change.
                                     </p>
                                     <ul>
-                                        <li><i class="icon-location-1"></i>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
                                             <span>Tei Wa Mbau Foundation</span></li>
-                                        <li><i class="icon-phone"></i>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i>
                                             <span>Phone: +254 123 000 000</span></li>
-                                        <li><i class="icon-mail"></i>
+                                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
                                             <span>Email: <a href="mailto:info@teiwambau.com">info@teiwambau.com</a></span></li>
                                     </ul>
                                 </div>
                                 <div class="social-link footer-social-link">
                                     <ul>
-                                        <li><a href="https://www.tumblr.com/" class="circle c-1"><i
-                                                class="icon-tumblr "></i></a></li>
-                                        <li><a href="https://www.facebook.com/" class="circle c-2"><i
-                                                class="icon-facebook "></i></a></li>
-                                        <li><a href="https://www.pinterest.com/" class="circle c-3"><i
-                                                class="icon-pinterest "></i></a></li>
-                                        <li><a href="https://vimeo.com/" class="circle c-4"><i class="icon-vimeo "></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="circle c-1">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a></li>
+                                        <li><a href="https://www.linkedin.com/" class="circle c-2">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a></li>
+                                        <li><a href="https://www.instagram.com/" class="circle c-3">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                </a></li>
+                                       
                                     </ul>
                                 </div> <!-- footer-social-link -->
                             </div>
@@ -661,18 +676,26 @@ Together, we can build a brighter tomorrow for all.
                                     </div>
                                 </form>
                             </div>
+
+                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                                <h4> Subscribe to our Newsletter </h4>
+                                <form action="...">
+                                    <div class="form-group">
+                                        <input id="email" name="email" type="email" placeholder="Your-Email address"
+                                               class="form-control" required="">
+                                    </div>
+                                    
+                                    <div class="form-group buttons ">
+                                        <input type="submit" class="red-btn red-btn-form" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
         
                         </div>
                     </div>
                 </div>
         
-                <div class="back-to-top">
-                    <a class="top top-page" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
-        
-                <div class="back-to-top-mob">
-                    <a class="top top-mob" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
+                
             </div>
         
         </footer>

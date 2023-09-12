@@ -2375,3 +2375,31 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const openModalBtn = document.getElementById("openModalBtn");
+    const modal = document.getElementById("myModal");
+    const closeModal = document.getElementsByClassName("close")[0];
+    const form = document.getElementById("myForm");
+
+    openModalBtn.addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+
+    closeModal.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Form submitted!");
+        modal.style.display = "none";
+        form.reset();
+    });
+});

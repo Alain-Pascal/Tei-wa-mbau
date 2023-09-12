@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <!-- Favicons -->
-    <link rel="shortcut icon" sizes="32x32" href="./images/TWM PNG.png"/>
-    
+    <link rel="shortcut icon" sizes="16x16" href="./images/TWM PNG.png"/>
     <meta charset="UTF-8">
-    <title>Tei wa mbau| Donate</title>
+    <title>Tei wa mbau | Contact</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/manual.css">
+    <link rel="stylesheet" type="text/css" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/bootstrap-responsive.min.css">
     <!-- Google fonts Poppins -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -27,23 +29,22 @@
     <script src="static/assets/js/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-
 <div class="page">
 
-
-
-    <!--=============================== Menu-Bar ========================-->
-    <div class="menuBar-charity">
+    <!--=============================== Header ===========================-->
+    
+        
+    </div>
+    <div id="menuBar-charity">
         <div class="menuBar">
             <nav class="navbar navbar-default ">
                 <div class="container p0">
                     <div class="navbar-header">
                         <div class="logo">
                             <a href="index.html" class="navbar-brand">
-                                <img src="./images/TWM PNG.png" style="height:6rem; width:100%" alt="Homepage logo">
-                                <span>Tei Wa Mbau</span>
+                                <img src="./images/TWM PNG.png" style="height:100px; width:100%; text-align:center" alt="Homepage logo">
+                                
                             </a>
                         </div>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -55,15 +56,12 @@
         
                         <div id="navbar-menu" class="collapse navbar-collapse ">
                             <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
-                                
-
-                                 <li><a href="index.html">HOME</a></li>
-                                
+                            
+                                        <li><a href="index.html">HOME</a></li>
+                                       
                                 <li><a href="about-us.html" class="about-us" title="About us">ABOUT US</a></li>
                                 
-                                <li>
-                                    <a href="donate.html">DONATE</a>
-                                </li>
+                        
                                 <li>
                                     <a href="programs.html">PROGRAMS</a>
                                 </li>
@@ -96,62 +94,40 @@
         
         
     </div>
-   
-            
 
 
-
+    
+  
+                              
+        
+       
     <!--=============================== Banner ==========================-->
-    <div class="banner" style="background-image: url('./images/4.jpg');background-repeat: no-repeat;background-attachment: fixed;
-  background-size: cover;">
-        <div class="shadow-main">
-            <h1> Please Donate</h1>
-        </div>
-    </div>
-
-    <!--========================== Login | Register =======================-->
-    <div class="main-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-sm-offset-3 col-xs-12">
-
-                    <div class="leave-reply">
-                        <div class="form-login">
-                            <h3> Support us by donating a small amount </h3>
-                            
-                            <form class="login-form form-all" action = "{{ url_for('donation') }}" method = "POST">
-                                <h4> Please fill out the below form to make your contribution</h4>
-                                <div class="form-group">
-                                    
-                                    <input class="form-control" type="text" name="amount" value= "Your name" />
-                                </div>
-                                <div class="form-group">
-                                    
-                                    <input class="form-control" type="text" name="email" value="Email"/>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" type="number" name="amt" placeholder="Please enter the amount you want to donate"required/>
-                                </div>
-                                <div class="form-group">
-                                    <label>Pay By:
-                                        <input list="fields" name="fields" /></label>
-                                        <datalist id="fields">
-                                          <option value="Mpesa">
-                                          <option value="Paypal">
-                                          <option value="Bank transfer">
-                                          
-                                        </datalist>
-                                </div>
-                                                                                 
-                                <button class="red-btn red-btn-form btn-login" >Donate</button>
-                                </form>
-                        </div>
-                    </div>
-
-                </div>
+    
+     <div class="main-container-6">
+        <div class="container" style="margin-top:80px;">
+            <div class="">
+                <h2 class="text-center"> We Provide access to clean water</h2>
             </div>
+               
+           
+            <div class="imagebox" style="margin-top:40px;">
+           
+           <div class="image">
+             <img src="./images/water.jpg">
+           </div>
+           <div class="image-description">
+             
+             <p class="paragraph-white">
+                The Tei Wa Mbau Foundation is dedicated to providing access to clean
+                 drinking water to communities in need. Through sustainable water projects, they aim to improve health, hygiene, and overall well-being in the region
+            </p>
+           </div>
+           
+         </div>
         </div>
-    </div>
+     </div>
+
+    
 
     <!--=============================== Footer ===========================-->
     <div id="footer">
@@ -164,28 +140,31 @@
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
                                 <div class="footer-about-info">
                                     <h4> About Us </h4>
-                                    <p> 
+                                    <p>
                                         Together, we work tirelessly to create pathways for growth and
                                         empowerment, driven by a deep belief in the potential for change.
                                     </p>
                                     <ul>
-                                        <li><i class="icon-location-1"></i>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
                                             <span>Tei Wa Mbau Foundation</span></li>
-                                        <li><i class="icon-phone"></i>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i>
                                             <span>Phone: +254 123 000 000</span></li>
-                                        <li><i class="icon-mail"></i>
+                                        <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
                                             <span>Email: <a href="mailto:info@teiwambau.com">info@teiwambau.com</a></span></li>
                                     </ul>
                                 </div>
                                 <div class="social-link footer-social-link">
                                     <ul>
-                                        <li><a href="https://www.tumblr.com/" class="circle c-1"><i
-                                                class="icon-tumblr "></i></a></li>
-                                        <li><a href="https://www.facebook.com/" class="circle c-2"><i
-                                                class="icon-facebook "></i></a></li>
-                                        <li><a href="https://www.pinterest.com/" class="circle c-3"><i
-                                                class="icon-pinterest "></i></a></li>
-                                        <li><a href="https://vimeo.com/" class="circle c-4"><i class="icon-vimeo "></i></a></li>
+                                        <li><a href="https://www.facebook.com/" class="circle c-1">
+                                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        </a></li>
+                                        <li><a href="https://www.linkedin.com/" class="circle c-2">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a></li>
+                                        <li><a href="https://www.instagram.com/" class="circle c-3">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                                </a></li>
+                                       
                                     </ul>
                                 </div> <!-- footer-social-link -->
                             </div>
@@ -210,35 +189,46 @@
                                     </div>
                                 </form>
                             </div>
+
+                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                                <h4> Subscribe to our Newsletter </h4>
+                                <form action="...">
+                                    <div class="form-group">
+                                        <input id="email" name="email" type="email" placeholder="Your-Email address"
+                                               class="form-control" required="">
+                                    </div>
+                                    
+                                    <div class="form-group buttons ">
+                                        <input type="submit" class="red-btn red-btn-form" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
         
                         </div>
                     </div>
                 </div>
         
-                <div class="back-to-top">
-                    <a class="top top-page" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
-        
-                <div class="back-to-top-mob">
-                    <a class="top top-mob" href="#"> <i class="icon-up-open-big"></i></a>
-                </div>
+                
             </div>
         
         </footer>
     </div>
 
-</div><!--  /.page -->
+</div>  <!--  /.page -->
+
 
 <!-- JS code -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./js/jquery.spincrement.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+
+    
+<!-- <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4ppPTHXCpBSoOkLESSfwMlD1zojoMxBc&callback=initMap">
+</script> -->
 <script src="./js/myScript.js"></script>
-<script>
-    "use strict";
-    $('.message a').click(function () {
-        $('form.form-all').animate({height: "toggle", opacity: "toggle"}, "slow");
-    });
-</script>
 
 </body>
-</html>
+
+</html>  

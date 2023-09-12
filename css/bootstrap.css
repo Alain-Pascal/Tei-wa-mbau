@@ -1264,19 +1264,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 26px;
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size:18px;
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 16px;
 }
 h5,
 .h5 {
@@ -1600,6 +1600,7 @@ pre code {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    
   }
 }
 .container-fluid {
@@ -1619,7 +1620,8 @@ pre code {
   padding-left: 15px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  float: left;
+  display:flex;
+    flex-wrap: wrap;
 }
 .col-xs-12 {
   width: 100%;
