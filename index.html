@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-	<!-- Favicons -->
-	<link rel="shortcut icon" sizes="16x16" href="./images/TWM PNG.png"/>
+    <!-- Favicons -->
+    <link rel="shortcut icon" sizes="16x16" href="./images/TWM PNG.png" />
 
     <meta charset="UTF-8">
     <title>Tei Wa Mbau | Homepage</title>
@@ -20,12 +21,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Fontello -->
-    <link rel="stylesheet" href="./css-fontello/animation.css" type="text/css"/>
-    <link rel="stylesheet" href="./css-fontello/fontello.css" type="text/css"/>
-    <link rel="stylesheet" href="./css-fontello/fontello-codes.css" type="text/css"/>
-    <link rel="stylesheet" href="./css-fontello/fontello-embedded.css" type="text/css"/>
-    <link rel="stylesheet" href="./css-fontello/fontello-ie7.css" type="text/css"/>
-    <link rel="stylesheet" href="./css-fontello/fontello-ie7-codes.css" type="text/css"/>
+    <link rel="stylesheet" href="./css-fontello/animation.css" type="text/css" />
+    <link rel="stylesheet" href="./css-fontello/fontello.css" type="text/css" />
+    <link rel="stylesheet" href="./css-fontello/fontello-codes.css" type="text/css" />
+    <link rel="stylesheet" href="./css-fontello/fontello-embedded.css" type="text/css" />
+    <link rel="stylesheet" href="./css-fontello/fontello-ie7.css" type="text/css" />
+    <link rel="stylesheet" href="./css-fontello/fontello-ie7-codes.css" type="text/css" />
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="static/assets/js/respond.min.js"></script>
@@ -33,128 +34,132 @@
 
 
 </head>
+
 <body>
-<div class="page">
+    <div class="page">
 
-    <!--=============================== Header ===========================-->
-    <div id="header"></div>
+        <!--=============================== Header ===========================-->
+        <div id="header"></div>
 
-    <!--=============================== Menu-Bar ========================-->
-    <div id="menuBar-charity">
-        <div class="menuBar">
-            <nav class="navbar navbar-default ">
-                <div class="container p0">
-                    <div class="navbar-header">
-                        <div class="logo">
-                            <a href="index.html" class="navbar-brand">
-                                <img src="./images/TWM PNG.png" style="height:120px; padding:20px; width:100%; text-align:center" alt="Homepage logo">
-                                
-                            </a>
-                        </div>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+        <!--=============================== Menu-Bar ========================-->
+        <div id="menuBar-charity">
+            <div class="menuBar">
+                <nav class="navbar navbar-default ">
+                    <div class="container p0">
+                        <div class="navbar-header">
+                            <div class="logo">
+                                <a href="index.html" class="navbar-brand">
+                                    <img src="./images/TWM PNG.png"
+                                        style="height:120px; padding:20px; width:100%; text-align:center"
+                                        alt="Homepage logo">
+
+                                </a>
+                            </div>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                 data-target="#navbar-menu">
-                            <i class="fa fa-bars" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <div class="navbar-right">
-        
-                        <div id="navbar-menu" class="collapse navbar-collapse ">
-                            <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
-                            
-                                        <li><a href="index.html">HOME</a></li>
-                                       
-                                <li><a href="about-us.html" class="about-us" title="About us">ABOUT US</a></li>
-                                
-                        
-                                <li>
-                                    <a href="programs.html">PROGRAMS</a>
-                                </li>
-                                <li class="last"><a href="contact.html" class="contact" title="Contact">CONTACT</a></li>
-                            </ul>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
                         </div>
-        
-                    </div>
-                </div>
-            </nav>
-        </div>
-        
-        <script>
-            "use strict";
-            // ===================== Menu Bar ======================
-             $(document).ready(function(){
-            var pathname = window.location.pathname;
-            var page = pathname.split(/[/ ]+/).pop();
-            var menuItems = $('#navbar-menu a');
-            menuItems.each(function(){
-                var mi = $(this);
-                var miHrefs = mi.attr("href");
-                var miParents = mi.parents('li');
-                if(page == miHrefs) {
-                    miParents.addClass("active").siblings().removeClass('active');
-                }
-            });
-             });
-        </script>
-        
-        
-    </div>
+                        <div class="navbar-right">
 
-    <!--=============================== Slider ==========================-->
-   
-        
-                
-    <div class="slider">
-        <div class="slider-item" style="background-image: url('./images/b.jpg');"></div>
-        <div class="slider-item" style="background-image: url('./images/sen.jpg');"></div>
-        <div class="slider-item" style="background-image: url('./images/1.jpg');"></div>
-   
+                            <div id="navbar-menu" class="collapse navbar-collapse ">
+                                <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
 
-    <div>
-        <div class="container p0">
-            <div class="item-content">
-                <div class="gb-middle">
-                    <div class="slider-info">
-                        <h2>Empowering Communities for a brighter tomorrow</h2>
-                        <div class="buttons">
-                            <a href="programs.html" class="red-btn red-btn-0">Get Involved</a>
+                                    <li><a href="index.html">HOME</a></li>
+
+                                    <li><a href="about-us.html" class="about-us" title="About us">ABOUT US</a></li>
+
+
+                                    <li>
+                                        <a href="programs.html">PROGRAMS</a>
+                                    </li>
+                                    <li class="last"><a href="contact.html" class="contact" title="Contact">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-            </div><!-- /.item-content -->
-        </div>
-    </div><!-- /.item -->
-    </div>
-
-
-    <script>
-        
-        const sliderItems = document.querySelectorAll(".slider-item");
-        let currentIndex = 0;
-
-        function changeSlide() {
-            sliderItems[currentIndex].style.opacity = "0";
-            currentIndex = (currentIndex + 1) % sliderItems.length;
-            sliderItems[currentIndex].style.opacity = "1";
-            setTimeout(changeSlide, 3000); 
-        }
-
-        // Start the slider
-        setTimeout(changeSlide, 0);
-    </script>
-
-             
-   
-    <!-- /.slider -->
-
-   
-
-                </div>
+                </nav>
             </div>
-        </div>
-    </div>  
 
-   
-    
+            <script>
+                "use strict";
+                // ===================== Menu Bar ======================
+                $(document).ready(function () {
+                    var pathname = window.location.pathname;
+                    var page = pathname.split(/[/ ]+/).pop();
+                    var menuItems = $('#navbar-menu a');
+                    menuItems.each(function () {
+                        var mi = $(this);
+                        var miHrefs = mi.attr("href");
+                        var miParents = mi.parents('li');
+                        if (page == miHrefs) {
+                            miParents.addClass("active").siblings().removeClass('active');
+                        }
+                    });
+                });
+            </script>
+
+
+        </div>
+
+        <!--=============================== Slider ==========================-->
+
+
+
+        <div class="slider">
+            <div class="slider-item" style="background-image: url('./images/b.jpg');"></div>
+            <div class="slider-item" style="background-image: url('./images/sen.jpg');"></div>
+            <div class="slider-item" style="background-image: url('./images/1.jpg');"></div>
+
+
+            <div>
+                <div class="container p0">
+                    <div class="item-content">
+                        <div class="gb-middle">
+                            <div class="slider-info">
+                                <h2>Empowering Communities for a brighter tomorrow</h2>
+                                <div class="buttons">
+                                    <a href="programs.html" class="red-btn red-btn-0">Get Involved</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.item-content -->
+                </div>
+            </div><!-- /.item -->
+        </div>
+
+
+        <script>
+
+            const sliderItems = document.querySelectorAll(".slider-item");
+            let currentIndex = 0;
+
+            function changeSlide() {
+                sliderItems[currentIndex].style.opacity = "0";
+                currentIndex = (currentIndex + 1) % sliderItems.length;
+                sliderItems[currentIndex].style.opacity = "1";
+                setTimeout(changeSlide, 3000);
+            }
+
+            // Start the slider
+            setTimeout(changeSlide, 0);
+        </script>
+
+
+
+        <!-- /.slider -->
+
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
 
     <!--=============================== Charity Events ==================-->
     <div class="events black" style="background-image: url('./images/bg.jpg');background-repeat: no-repeat;background-attachment: fixed;
@@ -164,8 +169,8 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                         <h2 class="title-text">What We Do</h2>
-                        
-                       
+
+
                     </div>
                 </div>
 
@@ -186,12 +191,12 @@
                                     <a href="#" class="white"> Education for Empowerment </a>
                                 </h6>
                                 <ul class="gb-list">
-                                    
+
                                     <li><i class="icon-location-1"></i>
                                         <a href="#"> Sponsored </a>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
 
@@ -210,7 +215,7 @@
                                     <a href="#" class="white">Community Development</a>
                                 </h6>
                                 <ul class="gb-list">
-                                    
+
                                     <li><i class="icon-location-1"></i>
                                         <a href="#"> Sponsored </a>
                                     </li>
@@ -233,7 +238,7 @@
                                     <a href="#" class="white">Access to clean water</a>
                                 </h6>
                                 <ul class="gb-list">
-                                    
+
                                     <li><i class="icon-location-1"></i>
                                         <a href="#"> Sponsored </a>
                                     </li>
@@ -280,7 +285,7 @@
                                     <a href="#" class="white">Economic activities for Boychild</a>
                                 </h6>
                                 <ul class="gb-list">
-                                    
+
                                     <li><i class="icon-location-1"></i>
                                         <a href="#"> Sponsored </a>
                                     </li>
@@ -315,10 +320,10 @@
         </div>
     </div>
 
-     <!--=============================== Images ==========================-->
-   
+    <!--=============================== Images ==========================-->
 
-   
+
+
 
     <!--=============================== Our Causes ======================-->
     <div class="main-container-4">
@@ -351,68 +356,70 @@
                         <h6 class="pull-right">112000.00 KSHs</h6>
                     </div>
                     <div class="buttons">
-                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
+                        <!-- <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a> -->
+                        <button class="openModalBtn red-btn red-btn-4" data-tf-popup="Ex7s5lYj">Donate</button>
                     </div>
-                    
 
-                    
-                    <div id="myModal" class="modal">
+                    <!-- <div id="myModal" class="modal">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                               
+
                                 <div class="modal-body">
                                     <div class="main-contact">
-                                     
-                                                    <div class="leave-reply">
-                                                        <div class="modal-header">
-                                                            <h3 class="modal-title">Make Your Donation</h3>
-                                                            <button class="close" onclick="closeModal()">&times;</button>
-                                                        </div>
-                                                        <div class="form-login">
-                                                        
-                                                            <form class="login-form form-all" action="{{ url_for('donation') }}" method="POST">
-                                                               
-                                                                <div class="form-group">
-                                                                    <input class="form-control" type="Phone" name="Phone" value="Phone Number" />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input class="form-control" type="number" name="amt" placeholder="Enter amount you want to donate" required />
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label>Pay By:
-                                                                        <input list="fields" name="fields" /></label>
-                                                                    <datalist id="fields">
-                                                                        <option value="Mpesa">
-                                                                        <option value="Paypal">
-                                                                        <option value="Bank transfer">
-                                                                    </datalist>
-                                                                </div>
-                                                                <button class="red-btn red-btn-form btn-login">Donate</button>
-                                                            </form>
-                                                        </div>
+
+                                        <div class="leave-reply">
+                                            <div class="modal-header">
+                                                <h3 class="modal-title">Make Your Donation</h3>
+                                                <button class="close" onclick="closeModal()">&times;</button>
+                                            </div>
+                                            <div class="form-login">
+
+                                                <form class="login-form form-all" action="{{ url_for('donation') }}"
+                                                    method="POST">
+
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="Phone" name="Phone"
+                                                            value="Phone Number" />
                                                     </div>
-                                                
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="number" name="amt"
+                                                            placeholder="Enter amount you want to donate" required />
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Pay By:
+                                                            <input list="fields" name="fields" /></label>
+                                                        <datalist id="fields">
+                                                            <option value="Mpesa">
+                                                            <option value="Paypal">
+                                                            <option value="Bank transfer">
+                                                        </datalist>
+                                                    </div>
+                                                    <button class="red-btn red-btn-form btn-login">Donate</button>
+                                                </form>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <script>
-                       function openModal() {
-        const modal = document.getElementById("myModal");
-        modal.style.display = "block";
-    }
 
-    function closeModal() {
-        const modal = document.getElementById("myModal");
-        modal.style.display = "none";
-    }
-                    </script>
-                                       
-                               
-                          
-                   
+                    <script>
+                        function openModal() {
+                            const modal = document.getElementById("myModal");
+                            modal.style.display = "block";
+                        }
+
+                        function closeModal() {
+                            const modal = document.getElementById("myModal");
+                            modal.style.display = "none";
+                        }
+                    </script> -->
+
+
+
+
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-6 mb">
@@ -439,7 +446,8 @@
                         <h6 class="pull-right">112000.00 KSHs</h6>
                     </div>
                     <div class="buttons">
-                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
+                        <!-- <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a> -->
+                        <button class="openModalBtn red-btn red-btn-4" data-tf-popup="Ex7s5lYj">Donate</button>
                     </div>
                 </div>
 
@@ -453,7 +461,7 @@
                         </div>
                         <div class="person-content">
                             <h3><a href="image3.html" class="title-white"> Community Development
-                            </a></h3>
+                                </a></h3>
                             <p>Support community development initiatives</p>
                         </div>
                     </div>
@@ -469,7 +477,8 @@
                         <h6 class="pull-right">112000.00 KSHs</h6>
                     </div>
                     <div class="buttons">
-                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
+                        <!-- <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a> -->
+                        <button class="openModalBtn red-btn red-btn-4" data-tf-popup="Ex7s5lYj">Donate</button>
                     </div>
                 </div>
 
@@ -483,7 +492,7 @@
                         </div>
                         <div class="person-content">
                             <h3><a href="image4.html" class="title-white">Empowerment through enterpreneurship
-                            </a></h3>
+                                </a></h3>
                             <p>Support aspiring entrepreneurs</p>
                         </div>
                     </div>
@@ -499,14 +508,15 @@
                         <h6 class="pull-right">112000.00 KSHs</h6>
                     </div>
                     <div class="buttons">
-                        <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a>
+                        <!-- <a class=" red-btn red-btn-4" id="openModalBtn" onclick="openModal()">Donate</a> -->
+                        <button class="openModalBtn red-btn red-btn-4" data-tf-popup="Ex7s5lYj">Donate</button>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
-     <!--=============================== Number ======================-->
+    <!--=============================== Number ======================-->
     <div class="number" id="counts">
         <div class="container">
             <div class="row">
@@ -528,8 +538,8 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 mb center ">
                     <div class="text">
-                        <p>Kshs 
-                        <span class="spincrement ml">1442</span>
+                        <p>Kshs
+                            <span class="spincrement ml">1442</span>
                             <span class="text-1"> Money Donated </span>
                         </p>
                     </div>
@@ -545,75 +555,77 @@
         </div>
     </div>
 
-   
+
     <div class="main-container-4">
         <div class="container mt-md-5">
-          <h2 class="title-text">Recent News</h2>
-          <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
-            <li class="col-lg-4 col-md-5 image-block full-width p-3">
-              <div class="image-block-inner">
-                <a class="mh-100" href="#">
-                  <img src="./images/causes9.jpg" alt=""class="img-responsive w-100"></a>
-                <span class="hp-posts-cat">5 September 2023</span>
-                <!--<h4 class="mt-3"><a class="title-white" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h4>-->
-                <!--  <p></p> -->
-                <a href="#" class="read-more title-white">Read more ></a>
-              </div><!-- .image-block-inner -->
-            </li>
-            <li class="col-lg-4 col-md-5 image-block full-width p-3">
-              <div class="image-block-inner">
-                <a class="mh-100" href="#">
-                  <img src="./images/b.jpg" alt="" class="img-responsive w-100"></a>
-                <span class="hp-posts-cat">28 August 2023</span>
-                <!--<h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h4>-->
-                <!--  <p></p> -->
-                <a href="#" class="read-more title-white">Read more ></a>
-              </div><!-- .image-block-inner -->
-            </li>
-            <li class="col-lg-4 col-md-5 image-block full-width p-3">
-              <div class="image-block-inner">
-                <a class="mh-100" href="#">
-                  <img src="./images/home.jpg" alt="" class="img-responsive w-100"></a>
-                <span class="hp-posts-cat">9 August 2023</span>
-                <!--<h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h4>-->
-                <!--  <p></p> -->
-                <a href="#" class="read-more title-white">Read more ></a>
-              </div><!-- .image-block-inner -->
-            </li>
-          </ul>
+            <h2 class="title-text">Recent News</h2>
+            <ul class="row d-lg-flex list-unstyled image-block justify-content-center px-lg-0 mx-lg-0">
+                <li class="col-lg-4 col-md-5 image-block full-width p-3">
+                    <div class="image-block-inner">
+                        <a class="mh-100" href="#">
+                            <img src="./images/causes9.jpg" alt="" class="img-responsive w-100"></a>
+                        <span class="hp-posts-cat">5 September 2023</span>
+                        <!--<h4 class="mt-3"><a class="title-white" href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a></h4>-->
+                        <!--  <p></p> -->
+                        <a href="#" class="read-more title-white">Read more ></a>
+                    </div><!-- .image-block-inner -->
+                </li>
+                <li class="col-lg-4 col-md-5 image-block full-width p-3">
+                    <div class="image-block-inner">
+                        <a class="mh-100" href="#">
+                            <img src="./images/b.jpg" alt="" class="img-responsive w-100"></a>
+                        <span class="hp-posts-cat">28 August 2023</span>
+                        <!--<h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h4>-->
+                        <!--  <p></p> -->
+                        <a href="#" class="read-more title-white">Read more ></a>
+                    </div><!-- .image-block-inner -->
+                </li>
+                <li class="col-lg-4 col-md-5 image-block full-width p-3">
+                    <div class="image-block-inner">
+                        <a class="mh-100" href="#">
+                            <img src="./images/home.jpg" alt="" class="img-responsive w-100"></a>
+                        <span class="hp-posts-cat">9 August 2023</span>
+                        <!--<h4 class="mt-3"><a class="title-white"href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h4>-->
+                        <!--  <p></p> -->
+                        <a href="#" class="read-more title-white">Read more ></a>
+                    </div><!-- .image-block-inner -->
+                </li>
+            </ul>
         </div>
-      
-   </div>
-    
+
+    </div>
+
 
     <div class="main-container-4">
-    
-            <div class="text-center">
-                <h2 class="">Our Testimonial</h2>
-            </div>
-        
-            <div class="youtube">
-                
-                     <div class="youtube-overlay-image">
-           
-                        <div class="youtube-overlay">
 
-                        <iframe class="iframe" src="https://www.youtube.com/embed/gjvQ83MrVfk" title="Impactful Endeavors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen web-share"></iframe>
-                      
-                        </div>
-          
-        
-                    </div>
+        <div class="text-center">
+            <h2 class="">Our Testimonial</h2>
+        </div>
+
+        <div class="youtube">
+
+            <div class="youtube-overlay-image">
+
+                <div class="youtube-overlay">
+
+                    <iframe class="iframe" src="https://www.youtube.com/embed/gjvQ83MrVfk" title="Impactful Endeavors"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen web-share"></iframe>
+
                 </div>
-                
-                   
-        
+
+
+            </div>
+        </div>
+
+
+
     </div>
-    
 
 
-    <!-- =============================== Latest News =====================--> 
-    
+
+    <!-- =============================== Latest News =====================-->
+
 
 
     <!--=============================== Footer ===========================-->
@@ -623,7 +635,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="footer-content">
-        
+
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
                                 <div class="footer-about-info">
                                     <h4> About Us </h4>
@@ -633,41 +645,44 @@
                                     </p>
                                     <ul>
                                         <li><i class="fa fa-map-marker" aria-hidden="true"></i>
-                                            <span>Tei Wa Mbau Foundation</span></li>
+                                            <span>Tei Wa Mbau Foundation</span>
+                                        </li>
                                         <li><i class="fa fa-phone" aria-hidden="true"></i>
-                                        <a href="tel:+254788 350 095"
-                                            <span>Phone:+254 788 350 095</span></a></li>
+                                            <a href="tel:+254788 350 095" <span>Phone:+254 788 350 095</span></a>
+                                        </li>
                                         <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                            <span>Email: <a href="mailto:info@teiwambau.foundation">info@teiwambau.foundation</a></span></li>
+                                            <span>Email: <a
+                                                    href="mailto:info@teiwambau.foundation">info@teiwambau.foundation</a></span>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="social-link footer-social-link">
                                     <ul>
                                         <li><a href="https://www.facebook.com/" class="circle c-1">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        </a></li>
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a></li>
                                         <li><a href="https://www.linkedin.com/" class="circle c-2">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
                                             </a></li>
                                         <li><a href="https://www.instagram.com/" class="circle c-3">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                                </a></li>
-                                       
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a></li>
+
                                     </ul>
                                 </div> <!-- footer-social-link -->
                             </div>
-        
-        
+
+
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
                                 <h4> Contact Us </h4>
                                 <form action="...">
                                     <div class="form-group">
                                         <input id="first_name" name="first_name" type="text" placeholder="Name"
-                                               class="form-control" required="">
+                                            class="form-control" required="">
                                     </div>
                                     <div class="form-group">
                                         <input id="email" name="email" type="email" placeholder="E-mail"
-                                               class="form-control">
+                                            class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <textarea class="form-control" rows="4" placeholder="Message..."></textarea>
@@ -678,40 +693,43 @@
                                 </form>
                             </div>
 
-                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb">
                                 <h4> Subscribe to our Newsletter </h4>
                                 <form action="...">
                                     <div class="form-group">
                                         <input id="email" name="email" type="email" placeholder="Your-Email address"
-                                               class="form-control" required="">
+                                            class="form-control" required="">
                                     </div>
-                                    
+
                                     <div class="form-group buttons ">
                                         <input type="submit" class="red-btn red-btn-form" value="Subscribe">
                                     </div>
                                 </form>
                             </div>
-        
+
                         </div>
                     </div>
                 </div>
-        
-                
+
+
             </div>
-        
+
         </footer>
     </div>
 
-</div>  <!--  /.page -->
+    </div> <!--  /.page -->
 
 
-<!-- JS code -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="./js/jquery.spincrement.js"></script>
-<script src="./js/owl.carousel.min.js"></script>
-<script src="./js/scrollBar.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/myScript.js"></script>
+    <!-- JS code -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/jquery.spincrement.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/scrollBar.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/myScript.js"></script>
+    <!-- typeform script -->
+    <script src="//embed.typeform.com/next/embed.js"></script>
 
 </body>
+
 </html>

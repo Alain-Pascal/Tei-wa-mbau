@@ -118,6 +118,17 @@ img {
     border: none;
 }
 
+.openModalBtn {
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    background-color: transparent;
+}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
